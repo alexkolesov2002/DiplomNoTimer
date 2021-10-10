@@ -54,32 +54,32 @@
             <StackPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="30,25,507,420" Height="45" Width="240" >
                 <StackPanel Margin="3">
                     <TextBlock Text="Набрано баллов в первом задании" FontSize="15"/>
-                    <TextBlock x:Name="OneZadanie" Text="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock x:Name="txtOneZadanie" Text="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </StackPanel>
             </StackPanel>
 
             <StackPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="25,140,492,305" Height="45" Width="260" >
                 <StackPanel Margin="3">
                     <TextBlock Text="Набрано баллов во втором задании" FontSize="15"/>
-                    <TextBlock x:Name="TwoZadanie" Text="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <TextBlock x:Name="txtTwoZadanie" Text="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </StackPanel>
             </StackPanel>
             <StackPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="485,20,22,425" Height="45" Width="270" >
                 <StackPanel Margin="3">
                     <TextBlock Text="Набрано баллов в третьем задании" FontSize="15"/>
-                    <TextBlock x:Name="ThreeZadanie" Text="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <TextBlock x:Name="txtThreeZadanie" Text="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </StackPanel>
             </StackPanel>
             <StackPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="510,140,7,305" Height="45" Width="260" >
                 <StackPanel Margin="-30,3,3,3">
                     <TextBlock Text="Набрано баллов в четвертом задании" FontSize="15" HorizontalAlignment="Left" Width="275" Height="17"/>
-                    <TextBlock x:Name="FourZadanie" Text="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <TextBlock x:Name="txtFourZadanie" Text="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </StackPanel>
             </StackPanel>
             <StackPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="265,0,242,205" Height="45" Width="270" >
                 <StackPanel Margin="3">
                     <TextBlock Text="Набрано баллов в пятом задании" FontSize="15" HorizontalAlignment="Center"/>
-                    <TextBlock x:Name="FiveZadanie" Text="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <TextBlock x:Name="txtFiveZadanie" Text="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </StackPanel>
             </StackPanel>
 

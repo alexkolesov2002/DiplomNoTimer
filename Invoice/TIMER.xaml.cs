@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,13 +26,17 @@ namespace Invoice
         {
             System.Windows.Threading.DispatcherTimer timer = new System.Windows.Threading.DispatcherTimer();
             timer.Tick += new EventHandler(timerTick);
-            timer.Interval = new TimeSpan(0, 0, 1);
+            timer.Interval = new TimeSpan(0, 0,10);
             timer.Start();
         }
 
         private void timerTick(object sender, EventArgs e)
         {
-            Debug.WriteLine(DateTime.Now);
+
+            var MainWindow = new MainWindow(228); 
+            MainWindow.Show(); 
+            this.Close();
+            
         }
     }
 }

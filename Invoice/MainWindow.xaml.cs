@@ -25,9 +25,10 @@ namespace Invoice
     public partial class MainWindow : Window
     {
         string FilePath { get; set; }
-        public MainWindow()
+        public MainWindow(int Onezadanie)
         {
             InitializeComponent();
+            txtOneZadanie.Text = Convert.ToString(Onezadanie);
         }
 
 

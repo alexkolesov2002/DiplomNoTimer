@@ -1,17 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using System.Windows.Threading;
 
 namespace Invoice
@@ -21,22 +9,27 @@ namespace Invoice
     /// </summary>
     public partial class TIMER : Window
     {
-        
+        DispatcherTimer timer1 = new DispatcherTimer();
         public TIMER()
         {
-            System.Windows.Threading.DispatcherTimer timer = new System.Windows.Threading.DispatcherTimer();
-            timer.Tick += new EventHandler(timerTick);
-            timer.Interval = new TimeSpan(0, 0,10);
-            timer.Start();
+            InitializeComponent();
+           
+            timer1.Tick += new EventHandler(timerTick);
+            timer1.Interval = new TimeSpan(0, 0,2);
+            timer1.Start();
+            
+
         }
 
         private void timerTick(object sender, EventArgs e)
         {
-
+           
             var MainWindow = new MainWindow(228); 
             MainWindow.Show(); 
             this.Close();
-            
+            timer1.Stop();
+
+
         }
     }
 }
